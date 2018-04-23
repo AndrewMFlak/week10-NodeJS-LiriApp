@@ -1,0 +1,24 @@
+{
+  "name": "week10-nodejs-liriapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "logic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewMFlak/week10-NodeJS-LiriApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewMFlak/week10-NodeJS-LiriApp/issues"
+  },
+  "homepage": "https://github.com/AndrewMFlak/week10-NodeJS-LiriApp#readme",
+  "dependencies": {
+    "geocoder": "^0.2.3",
+    "inquirer": "^5.2.0",
+    "twitter": "^1.7.1"
+  }
+}
