@@ -19,6 +19,7 @@
   "dependencies": {
     "geocoder": "^0.2.3",
     "inquirer": "^5.2.0",
+    "omdb-client": "^2.0.0",
     "twitter": "^1.7.1"
   }
 }
