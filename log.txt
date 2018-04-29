@@ -1,0 +1,107 @@
+User Command: /usr/local/bin/node,/Users/andrewflak/week10-NodeJS-LiriApp/liri.js
+
+LIRI Response:
+
+Usage:
+    node liri.js my-tweets
+    node liri.js spotify-this-song "<song_name>"
+    node liri.js movie-this "<movie_name>"
+    node liri.js do-what-it-says
+
+Error: Retrieving user tweets -- [object Object]User Command: /usr/local/bin/node,/Users/andrewflak/week10-NodeJS-LiriApp/liri.js
+
+LIRI Response:
+
+Usage:
+    node liri.js my-tweets
+    node liri.js spotify-this-song "<song_name>"
+    node liri.js movie-this "<movie_name>"
+    node liri.js do-what-it-says
+
+User Command: node liri.js movie-this 
+
+ERROR: Retrieving OMDB entry -- nullError: Retrieving user tweets -- [object Object]Error: Retrieving user tweets -- [object Object]Error: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+Error: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+Error: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+Error: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+Error: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+Error: Retrieving user tweets -- [object Object]User Command: node liri.js spotify-this-song 
+
+User Command: node liri.js movie-this <avatar> 
+
+ERROR: Retrieving OMDB entry -- nullUser Command: node liri.js movie-this avatar 
+
+ERROR: Retrieving OMDB entry -- nullUser Command: node liri.js movie-this avatar 
+
+User Command: node liri.js movie-this avatar 
+
+LIRI Response:
+
+--------------------------
+Movie Information:
+--------------------------
+
+
+User Command: node liri.js movie-this avatar 
+
+LIRI Response:
+
+--------------------------
+Movie Information:
+--------------------------
+
+Movie Title: Avatar
+Year Released: 18 Dec 2009
+IMDB Rating: 7.8
+Country Produced: UK, USA
+Language: English, Spanish
+Plot: When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid "Na'vi" in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Na'vi people with the use of an "avatar" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.
+Actors: Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang
+Rotten Tomatoes Rating: N/A
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/avatar/
+
+User Command: node liri.js movie-this avatar 
+
+LIRI Response:
+
+--------------------------
+Movie Information:
+--------------------------
+
+Movie Title: Avatar
+Year Released: 18 Dec 2009
+IMDB Rating: 7.8
+Country Produced: UK, USA
+Language: English, Spanish
+Plot: When his brother is killed in a robbery, paraplegic Marine Jake Sully decides to take his place in a mission on the distant world of Pandora. There he learns of greedy corporate figurehead Parker Selfridge's intentions of driving off the native humanoid "Na'vi" in order to mine for the precious material scattered throughout their rich woodland. In exchange for the spinal surgery that will fix his legs, Jake gathers intel for the cooperating military unit spearheaded by gung-ho Colonel Quaritch, while simultaneously attempting to infiltrate the Na'vi people with the use of an "avatar" identity. While Jake begins to bond with the native tribe and quickly falls in love with the beautiful alien Neytiri, the restless Colonel moves forward with his ruthless extermination tactics, forcing the soldier to take a stand - and fight back in an epic battle for the fate of Pandora.
+Actors: Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang
+Rotten Tomatoes Rating: N/A
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/avatar/
+
+User Command: node liri.js movie-this pretty woman 
+
+LIRI Response:
+
+--------------------------
+Movie Information:
+--------------------------
+
+Movie Title: Pretty Woman
+Year Released: 23 Mar 1990
+IMDB Rating: 7.0
+Country Produced: USA
+Language: English
+Plot: Because of his extreme wealth and suave good looks, Edward Lewis could seemingly have any woman he wants, that committed significant other which he needs on his arm at social events to further how he makes his money as a corporate raider. However, he focuses more on his corporate raiding pursuits with his partner in crime, Philip Stuckey, his lawyer of ten years, than those women, with every significant other he's had in his life feeling neglected and eventually leaving him, this fact about which he is just coming to the realization. In Beverly Hills, Edward, in needing that woman on his arms as he and Philip work toward taking over the company owned by the increasingly insolvent James Morse, decides, based on a chance encounter, to hire Hollywood Boulevard hooker Vivian Ward as his escort for the week 24/7. He does so because he wants to have a professional who would be committed to the work, yet not have any commitments to her after the week is over. Beyond their chance encounter, he also makes this decision because she surprises him about how unhookerish she is in certain respects. Vivian, relatively new to Los Angeles and the business, still has to look and act the part, with Edward, beyond giving her money, leaving her largely to her own devices to do so. So she gets a somewhat unlikely Henry Higgins in Barney Thompson, the manager of the Beverly Wilshire Hotel where Edward is staying. Barney has to draw that fine line of keeping the hotel's upscale clients happy, while maintaining the posh decorum of the upper class, which does not include people coming into the hotel looking for rooms with hourly rates. As Barney and his associates are able to transform Vivian into a Cinderella, the questions become whether Vivian can go back to her Hollywood Boulevard life and whether she does have her Prince Charming beyond this week in the form of Edward or anyone else who truly does see her as Cinderella as opposed to a Hollywood Boulevard streetwalker.
+Actors: Richard Gere, Julia Roberts, Ralph Bellamy, Jason Alexander
+Rotten Tomatoes Rating: N/A
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/pretty_woman/
+
+User Command: node liri.js spotify-this-song only the lonely 
+
+User Command: node liri.js spotify-this-song toxic 
+

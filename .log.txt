@@ -1,0 +1,8 @@
+User Command: node liri.js spotify-this-song 
+
+User Command: node liri.js spotify-this-song 
+
+User Command: node liri.js spotify-this-song 
+
+User Command: node liri.js spotify-this-song  kiss from a rose
+
