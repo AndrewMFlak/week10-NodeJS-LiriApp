@@ -97,7 +97,7 @@ function spotifySong(songName) {
             return;
         } else {
             var songInfo = data.tracks;
-            for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i < songInfo.length; i++) {
                 if (songInfo[i] != undefined) {
                     var outputStr = '--------------------------\n' +
                         'Song Information:\n' +
