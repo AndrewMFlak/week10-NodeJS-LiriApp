@@ -105,3 +105,29 @@ User Command: node liri.js spotify-this-song only the lonely
 
 User Command: node liri.js spotify-this-song toxic 
 
+User Command: node liri.js spotify-this-song toxic 
+
+User Command: node liri.js spotify-this-song faithfully 
+
+User Command: node liri.js spotify-this-song faithfully 
+
+User Command: node liri.js spotify-this-song faithfully 
+
+User Command: node liri.js spotify-this-song 
+
+User Command: node liri.js spotify-this-song faithfully 
+
+User Command: node liri.js spotify-this-song faithfully
+
+User Command: node liri.js spotify-this-song undefined
+
+User Command: node liri.js spotify-this-song faithfully
+
+User Command: node liri.js spotify-this-song faithfully
+
+User Command: node liri.js spotify-this-song faithfully
+
+User Command: node liri.js spotify-this-song faithfully
+
+User Command: node liri.js spotify-this-song faithfully
+

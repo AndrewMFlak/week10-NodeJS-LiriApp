@@ -36,9 +36,9 @@ function retrieveTweets() {
 
     // initialize the twitter client
     var client = new Twitter(twitterKeys);
-        
 
-    var params = {screen_name: '_FoShizleMyNizl', count: 20};
+
+    var params = { screen_name: '_FoShizleMyNizl', count: 20 };
 
     client.get('statuses/user_timeline', params, function (error, tweets, response) {
         if (error) {
@@ -65,16 +65,17 @@ function retrieveTweets() {
     });
 }
 
-function spotifySong(song) {
-    fs.appendFile('./log.txt', 'User Command: node liri.js spotify-this-song ' + song + '\n\n', (err) => {
+function spotifySong(songName) {
+    var songName = process.argv[3];
+    fs.appendFile('./log.txt', 'User Command: node liri.js spotify-this-song ' + songName + '\n\n', (err) => {
         if (err) throw err;
     });
 
-    var search;
-    if (song === '') {
+    var search = '';
+    if (songName === '') {
         search = 'The Sign Ace Of Base';
     } else {
-        search = song.then(function(response) {console.log(response);});
+        search = songName;
     }
 
     spotify.search({ type: 'track', query: search }, function (error, data) {
@@ -86,29 +87,32 @@ function spotifySong(song) {
                 console.log(errorStr1);
             });
             return;
-        } else {
-            var songInfo = data.tracks.items[0];
-            if (!songInfo) {
-                var errorStr2 = 'ERROR: No song info retrieved, please check the spelling of the song name!';
 
-                fs.appendFile('./log.txt', errorStr2, (err) => {
-                    if (err) throw err;
-                    console.log(errorStr2);
-                });
-                return;
-            } else {
-                var outputStr = '--------------------------\n' +
-                    'Song Information:\n' +
-                    '--------------------------\n\n' +
-                    'Song Name: ' + songInfo.name + '\n' +
-                    'Artist: ' + songInfo.artists[0].name + '\n' +
-                    'Album: ' + songInfo.album.name + '\n' +
-                    'Preview Here: ' + songInfo.preview_url + '\n';
-                fs.appendFile('./log.txt', 'LIRI Response:\n\n' + outputStr + '\n', (err) => {
-                    if (err) throw err;
-                    console.log(outputStr);
-                });
+            var errorStr2 = 'ERROR: No song info retrieved, please check the spelling of the song name!';
+
+            fs.appendFile('./log.txt', errorStr2, (err) => {
+                if (err) throw err;
+                console.log(errorStr2);
+            });
+            return;
+        } else {
+            var songInfo = data.tracks;
+            for (var i = 0; i < data.length; i++) {
+                if (songInfo[i] != undefined) {
+                    var outputStr = '--------------------------\n' +
+                        'Song Information:\n' +
+                        '--------------------------\n\n' +
+                        'Song Name: ' + songInfo.name + '\n' +
+                        'Artist: ' + songInfo.artists[0].name + '\n' +
+                        'Album: ' + songInfo.album.name + '\n' +
+                        'Preview Here: ' + songInfo.preview_url + '\n';
+                    fs.appendFile('./log.txt', 'LIRI Response:\n\n' + outputStr + '\n', (err) => {
+                        if (err) throw err;
+                        console.log(outputStr);
+                    });
+                }
             }
+
         }
     });
 }
@@ -151,7 +155,7 @@ function retrieveOBDBInfo(movie) {
                 var outputStr = '--------------------------\n' +
                     'Movie Information:\n' +
                     '--------------------------\n\n' +
-                'Movie Title: ' + data.Title + '\n' +
+                    'Movie Title: ' + data.Title + '\n' +
                     'Year Released: ' + data.Released + '\n' +
                     'IMDB Rating: ' + data.imdbRating + '\n' +
                     'Country Produced: ' + data.Country + '\n' +
